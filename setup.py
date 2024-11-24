@@ -1,8 +1,10 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="token_factory",
+    name="token_client",
     version="0.1",
-    package_dir={"": "src"},
-    packages=find_packages(where="src"),
+    packages=find_packages(),
+    install_requires=[
+        "web3",
+    ],
 ) 

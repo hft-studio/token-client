@@ -4,7 +4,7 @@ import time
 from web3 import Web3
 from pathlib import Path
 import json
-from token_factory.token_client import TokenClient
+from token_client.client import TokenClient
 
 @pytest.fixture(scope="session")
 def anvil_process():
