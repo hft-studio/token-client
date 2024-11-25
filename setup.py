@@ -6,5 +6,9 @@ setup(
     packages=find_packages(),
     install_requires=[
         "web3",
+        "flask",
     ],
+    extras_require={
+        "dev": ["pytest", "pytest-cov"],
+    },
 ) 
